@@ -1,0 +1,23 @@
+/*外層：box_in 內層：roller*/
+.box_in{
+    position: relative;
+    overflow: hidden;
+}
+
+.box_in .roller{
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(86, 165, 255, 0.3));
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_in:hover .roller {
+    top: 0;
+    transition: top 1s;
+}

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100..900&display=swap');
+
+:root {
+    /*第一組*/
+    --color101: #DFF2EB;
+    --color102: #B9E5E8;
+    --color103: #7AB2D3;
+    --color104: #4A628A;
+    /*第二組*/
+    --color201: #F3F3E0;
+    --color202: #133E87;
+    --color203: #608BC1;
+    --color204: #CBDCEB;
+}
+
+/*文字粗體*/
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/*背景色*/
+.bg-01{
+    background-color: var(--color101);
+}
+
+.bg-02{
+    background-color: var(--color102);
+}
+
+.bg-03{
+    background-color: var(--color103);
+}
+
+.bg-04{
+    background-color: var(--color104);
+}
+
+.bg-05{
+    background-color: var(--color105);
+}
+
+.bg-cover{
+    background-position: center center;
+    background-size: cover;
+    }
+
+/*外層：box_in 內層：roller*/
+.box_in {
+    position: relative;
+    overflow: hidden;
+}
+
+.box_in .roller {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(86, 165, 255, 0.3));
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_in:hover .roller {
+    top: 0;
+    transition: top 1s;
+}
+
+/* 選單 */
+.banner nav {
+    height: 90px;
+    text-align: center;
+    background-color: var(--color103);
+}
+
+.banner nav ul {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.banner nav ul li {
+    list-style-type: none;
+    float: left;
+}
+
+.banner nav ul a {
+    display: block;
+    background-color: var(--color101);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--color104);
+    font-size: 20px;
+    border-radius: 20px
+}
+
+.banner nav ul a:hover {
+    color: var(--color103);
+    background-color: var(--color104);
+}
+
+@media screen and (max-width:768px) {
+    .banner nav ul li a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+    }     
+}
+
+/* 小方框 */
+.demo{
+    width: 100%;
+    border: 5px solid var(--color03);
+    padding: 20px;           
+}
+
+/*按鈕*/
+.btn-purple {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #890dfd;
+    --bs-btn-border-color: #890dfd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6801c9;
+    --bs-btn-hover-border-color: #6801c9;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6801c9;
+    --bs-btn-active-border-color: #6801c9;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #890dfd;
+    --bs-btn-disabled-border-color: #890dfd;
+  }
+
+.btn-heavyblue {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #608BC1;
+    --bs-btn-border-color: #608BC1;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #133E87;
+    --bs-btn-hover-border-color: #133E87;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #133E87;
+    --bs-btn-active-border-color: #133E87;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #608BC1;
+    --bs-btn-disabled-border-color: #608BC1;
+  }
+
+  .btn-outline-heavyblue {
+    --bs-btn-color: #133E87;
+    --bs-btn-border-color: #133E87;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #133E87;
+    --bs-btn-hover-border-color: #133E87;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #133E87;
+    --bs-btn-active-border-color: #133E87;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #133E87;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #133E87;
+    --bs-gradient: none;
+  }
